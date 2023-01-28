@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+body {
+    background-color: rgba(161, 161, 163, 0.849);
+    padding: 10px;
+    background-image: url("./d.jpg");
+}
+#input_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+#heading {
+    font-size: 32px;
+    color: #032f58;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+#input_area {
+    /* border: 1px solid red; */
+    display: flex;
+    gap:10px;
+    margin-left: 20px;
+}
+#search_box {
+    background-color: white;
+    display: flex;
+    border: 2px solid rgb(77, 78, 77);
+    border-radius: 8px;
+}
+#search_input {
+    width: 280px;
+    height: 35px;
+    font-size: 18px;
+    color: rgb(58, 56, 56);
+    padding-left: 10px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+}
+.search-icon {
+    margin:0px 5px;
+    margin-top: 8px;
+    font-size:18px;
+    color: darkgray;
+}
+.no-outline:focus {
+  outline: none;
+}
+#para {
+    margin-top: 2px;
+    font-family: cursive;
+    color: rgb(34, 32, 32);
+}
+.location-icon {
+    font-size: 24px;
+    margin-top: 4px;
+    color: rgba(0, 0, 0, 0.904);
+}
+.location-icon:hover{
+    font-size: 25px;
+    color: rgb(6, 125, 161);
+}
+#search_button {
+      margin-top: 15px;
+      height: 40px;
+      width: 120px;
+      border: none;
+      /* background-color: #419aee; */
+      background-color: #979a9c;;
+      color: white;
+      font-size: 26px;
+      border-radius: 6px;
+      cursor: pointer;
+      box-shadow: 5px 5px 25px #4d5d6d;
+      border-radius: 8px;
+}
+#search_button:hover {
+    background-color: #67a8e6;
+}
+
+
+/* -----------------------------Weather info------------------------------------------------- */
+#weather_info {
+    width:700px;
+    margin-top: 30px;
+    margin-left: 24%;
+    background-color: #979a9c;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 5px 5px 25px #043d74;
+}
+#city_name {
+    font-size: 40px;
+    color:#043d74;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 700;
+    margin-top: 5px;
+}
+#weather_image {
+      /* margin-bottom: 10px; */
+      width: 150px;
+      height: 150px;
+}
+#season {
+    font-size: 28px;
+    color: #042a4e;
+    font-family: cursive; 
+}
+#temperature {
+    font-size: 36px;
+    color: #e7eaec;
+    margin-bottom: 30px;
+    font-family: cursive;
+}
+
+#more_info {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      padding: 16px;
+      color: whitesmoke;
+      font-family: cursive;
+      font-size: 14px;
+}
+h3 {
+    color: #042a4e;
+}
+  
+  
+  

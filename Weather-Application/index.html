@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "icon" href = "http://openweathermap.org/img/wn/09d@2x.png.png" type = "image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Today weather</title>
+</head>
+<body>
+
+    <div id="input_container">
+        <h1 id="heading">Search Your City Weather</h1>
+        <div id="input_area">
+            <div id="search_box">
+                <input id="search_input" type="text" placeholder="Search location" />
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            </div>
+            <p id="para">or</p>
+            <i class="fa-sharp fa solid fa-location-crosshairs location-icon" id="userlocation"></i>
+        </div> 
+        <button id="search_button">Search</button> 
+       
+    </div>
+
+    <div id="weather_info">
+        <h1 id="city_name"></h1>
+        <img src="http://openweathermap.org/img/wn/09d@2x.png" id="weather_image" />
+        <h4 id="season"></h4>
+        <h1 id="temperature"></h1>
+
+        <div id="more_info">
+            <div id="wind_info">
+                <h3>Wind</h3>
+                <h1><span id="wind_speed"></span><span class="unit">km</span></h1>
+            </div>
+            <div id="humidity_info">
+                <h3>Humidity</h3>
+                <h1><span id="humidity"></span><span class="unit">%</span></h1>
+            </div>
+            <div id="precipitation_info">
+                <h3>Cloudiness</h3>
+                <h1><span id="cloudiness"></span><span class="unit">%</span></h1>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
