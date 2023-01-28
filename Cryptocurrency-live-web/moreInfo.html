@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Crpto view</title>
+    <link rel = "icon" href = "logo.png" type = "image/x-icon">
+</head>
+<body>
+    <!-- ---------------------------------------Header--------------------------------------------------  -->
+    <div id="header">
+        <div id="logo-container">
+          <img src="logo.png" alt="logo" id="logo">
+          <h1 id="logo-name">CryptoView</h1>
+        </div>
+        <a href="./search.html"><button id="search-button">Search</button></a>
+    </div>
+
+    <div id="forBetter"></div> <!-- just for deprecated position absolute -->
+
+    <!-- ---------------------------------------Body--------------------------------------------------  -->
+    <div id="coin-info-container">
+
+        <!-- ------------Coin Description---------- -->
+        <div class = "coin-info-information">
+            <img id="coin-info-logo" src="" alt="coin">
+            <div id="coin-info-discription">
+                <h1 id="coin-info-heading"></h1>
+                <div id="coin-info-price-container">
+                    <div class="coin-info-prices"></div>
+                    <div class="coin-info-prices"></div>
+                    <div class="coin-info-prices"></div>
+                    <div class="coin-info-prices"></div>
+                </div>
+                <h2 id="coin-info-para-heading"></h2>
+                <p id="coin-info-paragraph"></p>
+            </div>
+        </div>
+
+        <!-- ------------coin chart------------------ -->
+        <div id="coin-info-graph">
+            <h1 class="coin-info-graph-heading">Price History</h1>
+            <canvas id="coin-graph" style="width: 100%; max-height: 400px;"></canvas>
+        </div>
+    </div>
+
+    <!-- ---------------------------------------Footer--------------------------------------------------  -->
+    <div id="footer">
+        <h1 id="developer-name">© CryptoView | Developed by Mohd Saqib....</h1>
+        <a id="github-link" href="https://github.com/MohdSaqib7/WebAssignment/tree/main/4-Advance-JS/411-crypto-view/AdvanceJS-411-01">
+          <img id="github-icon" src="github_logo.png" alt="github" />
+        </a>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,325 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* ----------------------------Header--------------------------------- */
+#header {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(82, 79, 79);
+    display: flex;
+    padding: 0px 20px;
+    padding-top: 7px;
+    justify-content: space-between;
+    position:fixed;
+}
+#logo-container {
+    display: flex;
+    flex-direction: row;
+    width:200px;
+    justify-content: space-between;
+}
+#logo {
+    width: 30px;
+    height: 34px;
+}
+#logo-name {
+    font-size: 30px;
+    color: antiquewhite;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#search-button {
+    width: 105px;
+    height: 35px;
+    background-color: white;
+    border: 2px solid rgb(216, 142, 32);;
+    border-radius: 6px;
+    font-size: 25px;
+    font-weight: 500;
+}
+#search-button:hover {
+    background-color: #f0ab3d;
+    color: white;
+    border: none;
+}
+
+/* ---------------------------Footer---------------------------------- */
+#footer {
+    width: 100%;
+    height: 35px;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 12px;
+    background-color: #FFFFFF;
+}
+#developer-name {
+    font-size: 15px;
+    font-weight: 200;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#github-icon {
+    width: 20px;
+    height: 20px;
+}
+
+
+/* =======================================Index.html==================================================== */
+#container {
+    width: 100%;
+    height: calc(100vh - 130px);
+    display: flex;
+    background-color: gainsboro;
+}
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:5px;
+    margin-left: 100px;
+    margin-top: 80px;
+}
+#content-heading {
+    font-size: 30px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#content-para {
+    font-size: 15px;
+    font-weight: 400;
+}
+#content-image {
+    margin-top: 100px;
+    width: 55vw;
+    height:60vh;
+    margin-left: 100px;
+}
+
+/* -------------------slidshow-------------------------- */
+#trending-coins-container {
+    padding: 5px 0px;
+    padding-bottom: 30px;
+    background-color: gainsboro;
+}
+#trending-coins-heading {
+    font-size: 25px;
+    font-weight: 600;
+    color: #fca311;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 45%;
+    margin-bottom: 10px;
+}
+#trending-coin-slideshow {
+    padding: 5px 0px;
+    display: flex;
+    overflow-x:hidden;
+    gap:15px;
+}
+.trending_coin_container {
+    min-width: 300px;
+    height: 70px;
+    display: flex;
+    gap:15px;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    padding: 5px 0px;
+}
+.coin-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.coin-name {
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.coin-price {
+    color: rgb(70, 68, 68);
+    margin-left: 5px;
+}
+.coin-logo {
+    margin-left: 10px;
+    margin-top: 5px;
+    width: 35px;
+    height: 35px;
+}
+
+
+/* =================================Search.html======================================================== */
+
+#action-container {
+    width:100%;
+    height: calc(100vh - 35px);
+    padding: 5px 20px;
+}
+#search-part {
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:30px 0px;
+    border-bottom: 1px solid gray;
+}
+#search-part-heading {
+    margin-right: 50px;
+    color: #ce8106;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+#search-input-bitcoin {
+    width:200px;
+    height: 35px;
+    border-radius: 5px;
+    padding: 4px 8px;
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(29, 27, 27);
+    align-items: center;
+}
+#search-bitcoin-button {
+    width:80px;
+    height: 33px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(209, 144, 46);
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+#search-bitcoin-button:hover {
+    background-color: #81540b;
+}
+
+
+#coin-container {
+    padding: 5px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap:10px;
+}
+.coin-box {
+    display: flex;
+    justify-content: space-between;
+    background-color: lightgray;
+    padding: 5px 10px;
+}
+.coin-information {
+    display: flex;
+    gap:15px;
+}
+.sr-no {
+    color: black;
+    font-weight: 400;
+    font-family: cursive;
+}
+.coin-symbol {
+    width:30px;
+    height: 27px;
+}
+.coin-title {
+    font-size: 20px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkslategrey;
+}
+
+.more-info-button {
+    width:75px;
+    height: 27px;
+    background-color: rgb(223, 166, 9);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+.more-info-button:hover {
+    height: 27px;
+    background-color: white;
+    border: 2px solid rgb(189, 134, 53);
+    color: black;
+}
+
+
+/* ======================================== MoreInfo.html ================================================= */
+#forBetter{
+    height: 50px;
+    width:100%;
+}
+#coin-info-container {
+    background-color: rgb(233, 231, 231);
+    padding-top: 50px;
+    padding-left: 110px;
+    padding-right: 70px;
+    display: flex;
+    flex-direction: column;
+    gap:50px;
+
+}
+.coin-info-information {
+    display: flex;
+    gap:80px;
+}
+#coin-info-logo {
+    width:15%;
+    height: 15%;
+}
+#coin-info-discription{
+
+}
+#coin-info-heading {
+    font-size: 26px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ce8106;
+}
+#coin-info-price-container {
+    display: flex;
+    gap:100px;
+    margin-left: 100px;
+    margin-top: 15px;
+}
+.coin-info-prices {
+    font-size: 18px;
+    font-weight: 300;
+    font-family: cursive;
+    font-style: italic;
+    color: rgb(40, 49, 23);
+}
+#coin-info-para-heading {
+    margin-top: 20px;
+    margin-bottom: 2px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+#coin-info-paragraph {
+    text-align: justify;
+    font-size: 15px;
+    font-weight: 500;
+    font-family:'Roboto', sans-serif;
+    color: black;
+}
+
+#coin-info-graph {
+    padding: 15px 0px;
+    margin-bottom: 50px;
+}
+.coin-info-graph-heading {
+    font-size: 28px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+    color: #ce8106;
+}
+
